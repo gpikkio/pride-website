@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIDE: Planetary Radio Interferometry and Doppler Experiment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #333;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.9)), url('https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-900 tracking-tight">PRIDE</div>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 uppercase tracking-wider">
+                <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+                <a href="#methodology" class="hover:text-blue-600 transition-colors">Methodology</a>
+                <a href="#juice" class="hover:text-blue-600 transition-colors">JUICE Mission</a>
+                <a href="#heritage" class="hover:text-blue-600 transition-colors">Heritage</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-32 border-b-4 border-blue-700">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight drop-shadow-md">Planetary Radio Interferometry and Doppler Experiment</h1>
+            <p class="text-xl text-blue-100 font-light leading-relaxed drop-shadow">
+                Precision spacecraft tracking for planetary science using Earth-based Very Long Baseline Interferometry networks.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-gray-900">Maximizing Mission Science</h2>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    PRIDE is a versatile tracking technique that extracts high-precision state vectors from spacecraft. It operates without requiring dedicated onboard hardware, relying solely on standard communication signals.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    By observing the spacecraft's radio transmission alongside distant celestial sources, PRIDE achieves sub-nanoradian lateral positioning and millihertz radial velocity resolution.
+                </p>
+            </div>
+            <div class="bg-gray-100 aspect-video flex items-center justify-center text-gray-500 text-sm p-6 text-center border border-gray-200 rounded-lg">
+                [Image Placeholder: Schematic showing Earth-based telescopes observing a spacecraft in the near-field and a distant quasar in the far-field.]
+            </div>
+        </div>
+    </section>
+
+    <!-- Science & Methodology -->
+    <section id="methodology" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-3xl mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-gray-900">Scientific Methodology</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    PRIDE relies on two distinct observables derived from the spacecraft's radio downlink, providing critical data for orbit determination and dynamical modelling.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Near-Field VLBI</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Multiple radio telescopes simultaneously record the spacecraft signal. By nodding between the target and a phase-reference calibrator, PRIDE measures the spacecraft's lateral position within the International Celestial Reference Frame (ICRF).
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Doppler Shift Analysis</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        High-resolution spectral processing of the narrow-band carrier signal extracts frequency deviations. This provides ultra-precise radial velocity estimates, complementing standard closed-loop tracking methods.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRIDE for JUICE -->
+    <section id="juice" class="py-20 bg-white border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1 bg-gray-100 aspect-video flex items-center justify-center text-gray-500 text-sm p-6 text-center border border-gray-200 rounded-lg">
+                [Image Placeholder: ESA's JUICE spacecraft in orbit around the Galilean moons.]
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900">PRIDE on the JUICE Mission</h2>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    PRIDE is an official science experiment for ESA's Jupiter Icy Moons Explorer (JUICE). It provides independent tracking data to refine the ephemerides of the Jovian system.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    These observables are vital for characterising the dynamics of Ganymede, Callisto, and Europa, offering insights into tidal dissipation and the internal structure of these icy worlds.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Previous Results -->
+    <section id="heritage" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-10 text-gray-900">Mission Heritage</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg border-l-4 border-blue-800 shadow-sm">
+                    <h3 class="text-lg font-bold mb-2 text-gray-900">Huygens Probe</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">Enabled the reconstruction of the descent trajectory through the atmosphere of Saturn's moon, Titan, validating the near-field tracking technique.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-l-4 border-blue-800 shadow-sm">
+                    <h3 class="text-lg font-bold mb-2 text-gray-900">Mars Express</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">Demonstrated high-precision astrometry during the Phobos flyby, providing complementary data for mass and ephemeris estimation.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-l-4 border-blue-800 shadow-sm">
+                    <h3 class="text-lg font-bold mb-2 text-gray-900">Venus Express</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">Conducted multi-station tracking for high-resolution radio occultations, probing the thermal structure of the Venusian atmosphere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Space Weather & SSA -->
+    <section id="spaceweather" class="py-20 bg-white border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-gray-900">Interplanetary Plasma Diagnostics</h2>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Radio signals from deep-space probes traverse the interplanetary medium. This propagation induces measurable phase fluctuations in the received signal.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    By analysing these scintillations, PRIDE estimates the Total Electron Content (TEC) of the solar wind, providing valuable data for studying solar wind turbulence and monitoring space weather.
+                </p>
+            </div>
+            <div class="bg-gray-100 aspect-video flex items-center justify-center text-gray-500 text-sm p-6 text-center border border-gray-200 rounded-lg">
+                [Image Placeholder: Plot illustrating Total Electron Content (TEC) measurements derived from spacecraft phase scintillations.]
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 text-sm border-t-4 border-blue-800">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+            <div>
+                <h4 class="text-white font-bold mb-3 uppercase tracking-wider">Acknowledgements</h4>
+                <p class="leading-relaxed">Observations are conducted using global VLBI networks, including the European VLBI Network (EVN). Data processing is hosted by the Joint Institute for VLBI ERIC (JIVE).</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-3 uppercase tracking-wider">Funding Disclaimer</h4>
+                <p class="leading-relaxed">Supported by national research councils, space agencies, and participating institutes. The contents of this document reflect the scientific findings of the PRIDE collaboration.</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-10 pt-6 border-t border-gray-800 text-center text-xs">
+            &copy; 2026 Planetary Radio Interferometry and Doppler Experiment.
+        </div>
+    </footer>
+
+</body>
+</html>
